@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/* Margin and Padding */
+
+body, .flex, li span, #add, #textInput, .adder {
+  margin: 0;
+}
+body, .flex, li span, .adder {
+  padding: 0;
+}
+
+
+/* Flex-box */
+
+body, ul, .block, .box, .flex, #add {
+  display: flex;
+}
+
+body, ul, .block, .box{
+  flex-direction: column;
+}
+
+body, #add {
+  justify-content: center;
+}
+
+body, .flex, #add {
+  align-items: center;
+}
+
+
+/* Width */
+
+body, .box, .flex, .block, #textInput {
+  width: 100%;
+}
+
+
+/* Height */
+
+body, ul {
+  height: 100%;
+}
+
+body, .box{
+  height: 100vh;
+}
+
+body, .box {
+  max-height: 100vh;
+}
+
+
+/* Individual styles */
+
+body {
+  gap: 20px;
+  background: black;
+  position: fixed;
+}
+
+#User, #textInput, .button {
+  border-radius: 10px;
+}
+
+#User, #textInput {
+  outline: none;
+}
+
+#User, #add {
+  background: none;
+}
+
+#User {
+  width: 100px;
+  height: 3em;
+  border: 1px solid white;
+}
+
+#User::placeholder, #User[type="text"] {
+  text-align: center;
+  color: white;
+}
+
+.Box, li {
+  background: white;
+  padding: 10px;
+}
+
+.Box {
+  height: 90%;
+  max-width: 100vw;
+  justify-content: space-between;
+  align-items: end;
+  border-radius: 20px;
+}
+
+.block {
+  background-color: black;
+  height: 95%;
+}
+
+ul {
+  width: 50%;
+  list-style: none;
+  margin: 5px 0px 0px auto;
+  overflow: auto;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+li {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  line-height: 1.3;
+  color: black;
+  border: none;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 20px;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  margin: 0 0 5px 0;
+  position: relative;
+}
+
+li span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 0.6rem;
+}
+
+.flex, #add {
+  border: 1px solid black;
+}
+
+.flex {
+  height: 5%;
+  justify-content: space-around;
+}
+
+#add, #textInput {
+  padding: 0px 10px;
+}
+
+#add {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.adder {
+  color: black;
+}
+
+.adder:hover {
+  animation: hover 0.7s ease infinite;
+}
+
+#textInput {
+  height: 2rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+@keyframes hover {
+  0% {
+    transform: translateY(3px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 414px) {
+  .Box {
+    height: 100%;
+    max-height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background: white;
+    overflow-y: scroll;
+  }
+}
