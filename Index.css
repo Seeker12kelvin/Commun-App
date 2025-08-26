@@ -45,11 +45,11 @@ body, ul {
   height: 100%;
 }
 
-body, .box{
+body, .Box{
   height: 100vh;
 }
 
-body, .box {
+body, .Box {
   max-height: 100vh;
 }
 
