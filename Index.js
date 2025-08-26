@@ -39,5 +39,6 @@ onValue(reference, snapshot => {
   const values = Object.values(data)
   values.forEach(val => {
       mess.innerHTML += handleMessages(val.text, val.name)
+      userName.value = val.name
   })
 })
