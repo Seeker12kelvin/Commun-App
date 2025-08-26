@@ -50,7 +50,7 @@ body, .Box{
 }
 
 body, .Box {
-  max-height: 100vh;
+  max-height: 100%;
 }
 
 
