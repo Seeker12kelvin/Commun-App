@@ -34,7 +34,7 @@ body, .flex, #add {
 
 /* Width */
 
-body, .box, .flex, .block, #textInput {
+body, .Box, .flex, .block, #textInput {
   width: 100%;
 }
 
